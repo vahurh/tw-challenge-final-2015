@@ -18,9 +18,17 @@
 				
 		<div class = "row">
 			<label for="image">Pilt</label>
-			<g:textField id = "image" name="image" value = "${cause?.image}"/>
+			<g:select from = "${['bear.jpg', 'ski.jpg', 'waterfall.jpg', 'cottage.jpg']}" name="image" value = "${cause?.image}"/>
             <g:hasErrors  bean="${cause}" field="image">
                 <p class="error"><g:fieldError bean="${cause}" field="image" /></p>
+            </g:hasErrors>
+		</div>
+		
+		<div class = "row">
+			<label for="schoolClass">Klass</label>
+			<g:select from = "${schoolClasses}" name="schoolClass"/>
+            <g:hasErrors  bean="${cause}" field="schoolClass">
+                <p class="error"><g:fieldError bean="${cause}" field="schoolClass" /></p>
             </g:hasErrors>
 		</div>
 		

@@ -60,6 +60,9 @@ form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 .student .name {font-size: 1.5em; color: #52c55b;}
 .student .glyphicon {font-size: 1.5em; color: #DC143C; margin-top: 5px;}
 
+.cause-link a {color: #52c55b; font-size: 1.3em;}
+.cause-link a:hover {text-decoration: underline;}
+
 /* -------------- Register styles ----------------*/
 
 .form-wrap {background: #fff; border-radius: 5px; padding: 15px 30px; margin-top: 30px;}
