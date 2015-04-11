@@ -70,6 +70,7 @@ form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 .form-wrap {background: #fff; border-radius: 5px; padding: 15px 30px; margin-top: 30px;}
 
 
+
 @media (max-width: 767px) {
 	.navbar-default .navbar-brand {padding-top: 20px;}
 	.navbar-default .navbar-brand img {height: 50px;}
