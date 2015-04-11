@@ -8,4 +8,8 @@ class CauseController {
 		
 		return [cause: cause, students: students]
 	}
+	
+	def create() {
+		
+	}
 }
