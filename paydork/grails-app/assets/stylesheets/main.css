@@ -6,7 +6,7 @@ h1, h2, h3, h4 {color: #525252;}
 /* -------------- Form styles ----------------*/
 form input, form textarea, form select {min-height: 30px; padding: 5px 10px; width: 100%; border: 1px solid #ccc; 
 	border-radius: 0; margin-top: 0;}
-form label {font-weight: 600; margin-top: 5px;}
+form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 .image-input {border-radius: 0px; min-height: 30px;}
 .form-button {width: auto; margin: 15px auto; display: block; border-radius: 5px; 
 	background: #58c55b; color: #fff; border: 1px solid #58c55b;}
@@ -62,7 +62,7 @@ form label {font-weight: 600; margin-top: 5px;}
 
 /* -------------- Register styles ----------------*/
 
-.register-form-wrap {background: #fff; border-radius: 5px; padding: 15px 30px; margin-top: 30px;}
+.form-wrap {background: #fff; border-radius: 5px; padding: 15px 30px; margin-top: 30px;}
 
 
 @media (max-width: 767px) {

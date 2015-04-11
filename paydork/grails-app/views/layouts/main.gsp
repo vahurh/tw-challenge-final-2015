@@ -31,10 +31,16 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">HOW IT WORKS</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">SIGN UP</a></li>
-                <li><a href="#">LOG IN</a></li>
+                <li><a href="#">KUIDAS TÖÖTAB</a></li>
+                <li><a href="#">KONTAKT</a></li>
+                <sec:ifNotLoggedIn>
+	                <li><g:link controller = "user" action = "register">REGISTREERI</g:link></li>
+	                <li><g:link controller = "login" action = "index">LOGI SISSE</g:link></li>
+	            </sec:ifNotLoggedIn>
+	            <sec:ifLoggedIn>
+	            	<li><g:link controller = "cause" action = "create">LOO MAKSE</g:link></li>
+	                <li><g:link controller = "logout" action = "index">LOGI VÄLJA</g:link></li>
+	            </sec:ifLoggedIn>
                 <li class="dropdown hidden">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">

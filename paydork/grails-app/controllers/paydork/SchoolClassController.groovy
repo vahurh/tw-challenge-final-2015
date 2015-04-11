@@ -2,5 +2,11 @@ package paydork
 
 class SchoolClassController {
 
-    static scaffold = true
+    def create() {
+		
+		if (request.method == "POST") {
+			d
+		}
+		
+	}
 }

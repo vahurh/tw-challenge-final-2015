@@ -38,7 +38,7 @@
 	</g:if>
 	
 	<div class = "row submit">
-		<g:submitButton class="btn btn-default form-button" id = "createButton" name="trip-create-button" value="Tee sõit" />
+		<g:submitButton class="btn btn-default form-button" name="user-register-button" value="Registreeri" />
 	</div>
 	
 </g:form>
