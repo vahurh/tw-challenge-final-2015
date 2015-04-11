@@ -1,7 +1,6 @@
 package paydork
 import grails.plugin.springsecurity.annotation.Secured
 
-
 class SchoolClassController {
 
 	@Secured(['ROLE_ADMIN', 'ROLE_USER'])
@@ -14,7 +13,7 @@ class SchoolClassController {
 			schoolClass.teacher = user
 			if (schoolClass.save(flush: true)) {
 				redirect (uri: "/")
-			}
+			} else return [schoolClass: schoolClass]
 		}
 		
 	}
@@ -33,8 +32,8 @@ class SchoolClassController {
 			if (schoolClass.validate()) {
 				schoolClass.save(flush: true)
 				redirect (uri: "/")
-			}
-		}
+			} else return [schoolClass: schoolClass]
+		} else return [schoolClass: schoolClass]
 		
 	}
 }
