@@ -2,5 +2,10 @@ package paydork
 
 class CauseController {
 
-    static scaffold = true
+    def view() {
+		def cause = Cause.get(params.id)
+		def students = cause.students()
+		
+		return [cause: cause, students: students]
+	}
 }

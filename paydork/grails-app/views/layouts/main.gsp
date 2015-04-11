@@ -15,7 +15,7 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -25,7 +25,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand"><asset:image src = "logo.png"/></a>
+              <g:link uri = "/" class="navbar-brand"><asset:image src = "logo.png"/></g:link>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

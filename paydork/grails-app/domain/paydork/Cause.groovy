@@ -4,6 +4,7 @@ class Cause {
 	
 	String name
 	String description
+	String image
 	
 	BigDecimal price
 	BigDecimal pricePerStudent
@@ -21,6 +22,14 @@ class Cause {
 	
     static constraints = {
     }
+	
+	def students() {
+		causeStudents.collect{it.student}
+	}
+	
+	def editors() {
+		causeEditors.collect{it.teacher}
+	}	
 	
 	def addToStudents(Student student) {
 		CauseStudent.link(student, this)

@@ -6,6 +6,7 @@ class User {
 
 	String username
 	String password
+	String avatar
 	
 	String name
 	

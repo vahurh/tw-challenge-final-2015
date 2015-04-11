@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<title>Checkle</title>
+		<title>SchoolWallet</title>
 	</head>
 	
 	<body>
