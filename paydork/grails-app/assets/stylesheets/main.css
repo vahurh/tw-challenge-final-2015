@@ -60,6 +60,11 @@ form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 .student .name {font-size: 1.5em; color: #52c55b;}
 .student .glyphicon {font-size: 1.5em; color: #DC143C; margin-top: 5px;}
 
+/* -------------- Contact -----------------------*/
+
+.form-wrap.contact{height: 500px;}
+.form-wrap.contact h1{margin-top: 100px; margin-bottom: 40px;}
+
 /* -------------- Register styles ----------------*/
 
 .form-wrap {background: #fff; border-radius: 5px; padding: 15px 30px; margin-top: 30px;}
