@@ -15,6 +15,9 @@
 		<asset:javascript src="application.js"/>
 		<g:layoutHead/>
 	</head>
+	<script>$(function() { $.scrollIt(); });</script>
+    <script src="jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="scrollIt.js" type="text/javascript"></script>
 	<body>
 		<nav class="navbar navbar-default">
           <div class="container">
@@ -32,7 +35,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><g:link controller ="page" action ="howTo" >KUIDAS TÖÖTAB</g:link></li>
+                <li><a data-scroll-nav="0" >KUIDAS TÖÖTAB</a></li>
                 <li><g:link controller = "page" action = "contact">KONTAKT</g:link></li>
                 <sec:ifNotLoggedIn>
 	                <li><g:link controller = "user" action = "register">REGISTREERI</g:link></li>
