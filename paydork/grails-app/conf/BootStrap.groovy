@@ -1,17 +1,24 @@
 import paydork.Cause
+import paydork.Role
 import paydork.SchoolClass
 import paydork.User
+import paydork.UserRole
 import paydork.Student
 
 class BootStrap {
 
     def init = { servletContext ->
+		def adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true)
+		def userRole = new Role(authority: 'ROLE_USER').save(flush: true)
 		
 		def teacher = new User(username: "teacher", password: "sala", name: "Fly Guy",
 			avatar: "http://elasticbeanstalk-eu-west-1-259189460812.s3.amazonaws.com/images/user/main/user4-main-xFr1INUbRD.jpg").save(failOnError: true)
 		def editor = new User(username: "editor", password: "sala", name: "For A White Guy", 
 			avatar: "http://elasticbeanstalk-eu-west-1-259189460812.s3.amazonaws.com/images/user/main/user4-main-xFr1INUbRD.jpg").save(failOnError: true)
 		
+		UserRole.create(teacher, adminRole, true)
+		UserRole.create(editor, userRole, true)
+			
 		def schoolClass = new SchoolClass(name: "GAG 12D", teacher: teacher).save(failOnError: true)
 		
 		def student = new Student(name: "Walk Guy", schoolClass: schoolClass).save(failOnError: true)
