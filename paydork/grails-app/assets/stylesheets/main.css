@@ -62,6 +62,10 @@ form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 
 .cause-link a {color: #52c55b; font-size: 1.3em;}
 .cause-link a:hover {text-decoration: underline;}
+/* -------------- Contact -----------------------*/
+
+.form-wrap.contact{height: 500px;}
+.form-wrap.contact h1{margin-top: 100px; margin-bottom: 40px;}
 
 /* -------------- Register styles ----------------*/
 
