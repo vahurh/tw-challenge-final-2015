@@ -1,4 +1,4 @@
-	<g:form action="create" name="create-cause-form">		
+	<g:form action="edit" name="create-cause-form">		
 		
 		<div class = "row">
 			<label for="name">Nimi</label>
