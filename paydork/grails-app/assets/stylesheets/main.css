@@ -37,6 +37,8 @@ form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 .fullwidth-arrow p {font-size: 2em; height: 60px; margin: 0; padding-top: 15px;}
 .fullwidth-arrow a {color: #58c55b;}
 
+
+.index img {width: 300px; height: 300px; margin: 0 auto; display: block;}
 /* -------------- Cause view styles ----------------*/
 
 .cause {margin-top: 50px; float: left; border-radius: 5px; background: #fff;}
@@ -62,6 +64,13 @@ form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 
 .cause-link a {color: #52c55b; font-size: 1.3em;}
 .cause-link a:hover {text-decoration: underline;}
+
+/* -------------- Dashboard styles -----------------------*/
+.dashboard h2 {font-weight: 300; color: #000;}
+.dashboard a {color: #52c55b;}
+.dashboard a:hover {text-decoration: underline;}
+
+
 /* -------------- Contact -----------------------*/
 
 .form-wrap.contact{height: 500px;}
