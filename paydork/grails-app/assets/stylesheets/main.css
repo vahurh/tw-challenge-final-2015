@@ -4,7 +4,13 @@ a:hover, a:focus, a:active {text-decoration: none; color: #000; outline: 0;}
 h1, h2, h3, h4 {color: #525252;}
 
 /* -------------- Form styles ----------------*/
-
+form input, form textarea, form select {min-height: 30px; padding: 5px 10px; width: 100%; border: 1px solid #ccc; 
+	border-radius: 0; margin-top: 0;}
+form label {font-weight: 600; margin-top: 5px;}
+.image-input {border-radius: 0px; min-height: 30px;}
+.form-button {width: auto; margin: 15px auto; display: block; border-radius: 5px; 
+	background: #58c55b; color: #fff; border: 1px solid #58c55b;}
+.form-button:hover, .form-button:active, .form-button:focus {background: #fff; color: #58c55b; border-color: #58c55b;}
 
 /* -------------- Navbar styles ----------------*/
 .navbar {background: white; min-height: 90px; margin-bottom: 0; border-bottom: none; box-shadow: 0px 0px 15px #eee;}
@@ -31,6 +37,8 @@ h1, h2, h3, h4 {color: #525252;}
 .fullwidth-arrow p {font-size: 2em; height: 60px; margin: 0; padding-top: 15px;}
 .fullwidth-arrow a {color: #58c55b;}
 
+/* -------------- Cause view styles ----------------*/
+
 .cause {margin-top: 50px; float: left; border-radius: 5px; background: #fff;}
 .cause .left {padding: 0;}
 .cause .main-img {border-radius: 5px;}
@@ -47,8 +55,15 @@ h1, h2, h3, h4 {color: #525252;}
 .cause .details p {font-size: 1.7em; font-weight: 300;}
 .cause .details .glyphicon {color: #52c55b; font-size: 1.5em; position: relative; top: 10px;}
 
-.student {background: #fff;}
+.students {background: #fff; margin-top: 30px; border-radius: 5px;}
+.student {margin-top: 10px; border-bottom: 1px solid #eee;}
 .student .name {font-size: 1.5em; color: #52c55b;}
+.student .glyphicon {font-size: 1.5em; color: #DC143C; margin-top: 5px;}
+
+/* -------------- Register styles ----------------*/
+
+.register-form-wrap {background: #fff; border-radius: 5px; padding: 15px 30px; margin-top: 30px;}
+
 
 @media (max-width: 767px) {
 	.navbar-default .navbar-brand {padding-top: 20px;}
@@ -63,11 +78,17 @@ h1, h2, h3, h4 {color: #525252;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.cause .details {margin-top: 0px;}
+	.cause .details .detail {margin-top: 10px;}
+	.cause .details p {font-size: 1.3em; font-weight: 300;}
+	.cause .details .glyphicon {color: #52c55b; font-size: 1.2em; position: relative; top: 10px;}
  }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
+	.cause .details {margin-top: 20px;}
+	.cause .details .detail {margin-top: 10px;}
+	.cause .details p {font-size: 1.3em; font-weight: 300;}
+	.cause .details .glyphicon {color: #52c55b; font-size: 1.2em; position: relative; top: 10px;}
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
