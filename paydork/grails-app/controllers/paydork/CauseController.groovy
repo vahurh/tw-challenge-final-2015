@@ -19,10 +19,14 @@ class CauseController {
 			def cause = new Cause(name: params.name, description: params.description,
 				image: params.image, price: params.price.toBigDecimal(), 
 				pricePerStudent: params.price.toBigDecimal())
-			cause.schoolClass = SchoolClass.findByName(params.schoolClass)
+			def schoolClass = SchoolClass.findByName(params.schoolClass)
+			cause.schoolClass = schoolClass
 			cause.tripDate = new Date()
 			cause.dueDate = new Date()
 			if (cause.save(flush: true, failOnError: true)) {
+				for(student in schoolClass.students) {
+					cause.addToStudents(student)
+				}
 				redirect (controller: "cause", action: "view", params: [id: cause.id])
 			} else return [cause: cause]
 		} else return [schoolClasses: schoolClasses]

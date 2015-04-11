@@ -17,7 +17,8 @@
 							<p class = "text-center cause-link">
 								<g:link controller = "cause" action = "view" params = "[id: cause.id]">${cause.name}</g:link>
 							</p>
-							<p class = "text-center">Maksumus: <strong>${cause.price}</strong></p>
+							<p class = "text-center"><strong>Maksumus:</strong> ${cause.price}</p>
+							<p class = "text-center"><strong>Aegub:</strong> <g:formatDate format="dd-MM-yyyy" date="${cause.tripDate}"/> </p>
 						</div>
 					</div>
 				</g:each>
@@ -32,7 +33,7 @@
 								<g:link controller = "schoolClass" action = "view" params = "[id: sc.id]">${sc.name}</g:link>
 							</p>
 							<p class = "text-center">Õpilaste arv: <span class="badge">${sc.students.size()}</span></p>
-							<p class = "text-center"><g:link controller = "schoolClass" action = "edit">Muuda</g:link></p>
+							<p class = "text-center"><g:link controller = "schoolClass" action = "edit" params = "[id: sc.id]">Muuda</g:link></p>
 						</div>
 					</div>
 				</g:each>

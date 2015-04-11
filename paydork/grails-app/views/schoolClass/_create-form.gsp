@@ -4,7 +4,7 @@
 		<label for="name">Klassinimi</label>
 		<g:textField name="name" required = "true" value="${schoolClass?.name}" />
         <g:hasErrors  bean="${schoolClass}" field="name">
-            <p class="error"><g:fieldError bean="${user}" field="name" /></p>
+            <p class="error"><g:fieldError bean="${schoolClass}" field="name" /></p>
         </g:hasErrors>
 	</div>
 	

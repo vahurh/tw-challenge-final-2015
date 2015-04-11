@@ -11,7 +11,7 @@ class BootStrap {
 		def adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true)
 		def userRole = new Role(authority: 'ROLE_USER').save(flush: true)
 		
-		def teacher = new User(username: "teacher", password: "sala", name: "Fly Guy",
+		def teacher = new User(username: "teacher", password: "sala", name: "Anneli Õps",
 			avatar: "http://elasticbeanstalk-eu-west-1-259189460812.s3.amazonaws.com/images/user/main/user4-main-xFr1INUbRD.jpg").save(failOnError: true)
 		def editor = new User(username: "editor", password: "sala", name: "For A White Guy", 
 			avatar: "http://elasticbeanstalk-eu-west-1-259189460812.s3.amazonaws.com/images/user/main/user4-main-xFr1INUbRD.jpg").save(failOnError: true)

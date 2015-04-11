@@ -43,14 +43,6 @@
 	            	<li><g:link controller = "cause" action = "create">LOO MAKSE</g:link></li>
 	                <li><g:link controller = "logout" action = "index">LOGI VÄLJA</g:link></li>
 	            </sec:ifLoggedIn>
-                <li class="dropdown hidden">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                  </ul>
-                </li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

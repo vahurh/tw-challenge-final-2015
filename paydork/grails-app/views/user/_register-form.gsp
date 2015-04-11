@@ -23,14 +23,6 @@
             <p class="error"><g:fieldError bean="${user}" field="name" /></p>
         </g:hasErrors>
 	</div>
-	
-	<div class = "row">
-		<label for="avatar">Profiilipildi link</label>
-		<g:textField name="avatar" required = "true" value="${user?.avatar}" />
-        <g:hasErrors  bean="${user}" field="avatar">
-            <p class="error"><g:fieldError bean="${user}" field="avatar" /></p>
-        </g:hasErrors>
-	</div>
 
 	
 	<g:if test="${flash.message}">

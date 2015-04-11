@@ -23,7 +23,7 @@ class PageController {
 			schoolClass {
 				eq('teacher', user)
 			}
-			order('dateCreated', 'desc')
+			order('dueDate', 'desc')
 		}
 		return causes
 	}
