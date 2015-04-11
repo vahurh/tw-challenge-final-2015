@@ -32,7 +32,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">KUIDAS TÖÖTAB</a></li>
+                <li><g:link controller ="page" action ="howTo" >KUIDAS TÖÖTAB</g:link></li>
                 <li><g:link controller = "page" action = "contact">KONTAKT</g:link></li>
                 <sec:ifNotLoggedIn>
 	                <li><g:link controller = "user" action = "register">REGISTREERI</g:link></li>

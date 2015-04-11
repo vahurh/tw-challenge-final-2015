@@ -18,7 +18,7 @@
 				
 		<div class = "row">
 			<label for="image">Pilt</label>
-			<g:select from = "${['bear.jpg', 'ski.jpg', 'waterfall.jpg', 'cottage.jpg']}" name="image" value = "${cause?.image}"/>
+			<g:select from = "${['bear.jpg', 'ski.jpg', 'textbook.jpg', 'waterfall.jpg']}" name="image" value = "${cause?.image}"/>
             <g:hasErrors  bean="${cause}" field="image">
                 <p class="error"><g:fieldError bean="${cause}" field="image" /></p>
             </g:hasErrors>
