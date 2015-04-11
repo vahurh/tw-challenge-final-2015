@@ -1,0 +1,135 @@
+body {font-family: 'Open Sans', sans-serif; background: #fff; height: 3000px;}
+a {color: #000; outline: 0;}
+a:hover, a:focus, a:active {text-decoration: none; color: #000; outline: 0;}
+h1, h2, h3, h4 {color: #525252;}
+
+/* -------------- Form styles ----------------*/
+
+
+/* -------------- Navbar styles ----------------*/
+.navbar {background: white; min-height: 90px; margin-bottom: 0; border-bottom: none; box-shadow: 0px 0px 15px #eee;}
+.navbar-default .navbar-brand {color: #58c55b; padding-top: 0; height: 90px; 
+	padding-top: 5px; font-weight: 600; font-size: 1.8em; letter-spacing: 2px;}
+.navbar-default .navbar-brand {padding-top: 20px;}
+.navbar-default .navbar-brand img {height: 50px;}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color: #58c55b;}
+.navbar-default .navbar-nav li {height: 90px;}
+.navbar-default .navbar-nav li a {color: #58c55b; height: 90px; padding: 35px 15px 0; font-size: 1.1em; font-weight: 400; letter-spacing: 0.3px;}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {color: #58c55b; border-bottom: 4px solid #58c55b;} 
+.navbar-default .navbar-nav li .glyphicon {margin-right: 10px;}
+.navbar-default .navbar-toggle {border: none; margin-top: 30px;}
+.navbar-default .navbar-toggle .icon-bar {background: #fff;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background: none;}
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {background: #fff;}
+
+/* -------------- Home page full-width styles ----------------*/
+.full-width {position: relative; overflow: hidden; z-index: -5; min-height: 450px;}
+.full-width img {position: absolute; top: 0; z-index: -5; width: 100%; min-height: 100%;}
+.full-width h1 {width: 730px; color: #58c55b; font-size: 5em; background: rgba(0, 0, 0, 0.8);
+	padding: 20px 0; margin: 20% auto 0; font-weight: 300;}
+.fullwidth-arrow {float: left; width: 100%; position: relative; top: -60px;}
+.fullwidth-arrow p {font-size: 2em; height: 60px; margin: 0; padding-top: 15px;}
+.fullwidth-arrow a {color: #58c55b;}
+
+/* -------------- Home page services styles ----------------*/
+.services-container {padding-bottom: 80px;}
+
+.services h2 {font-size: 3em; font-weight: 300; color: #58c55b;}
+.service {background: #fff; box-shadow: 0px 1px 5px rgba(167, 130, 78, 0.5); padding: 5px; 
+	margin-bottom: 30px; position: relative;}
+.service img {width: 100%;}
+.service p {position: absolute; top: 45%; left: 0; font-size: 2.5em; font-weight: 300; width: 100%; color: #fff;}
+.service .overlay {position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; background: rgb(0, 0, 0);
+	opacity: 0.7;}
+.service:hover .overlay, .service:hover p {opacity: 0;}
+.service .overlay, .service p {
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.team  {background: #58c55b; padding: 0px 0;}
+.team h2 {font-size: 3em; font-weight: 300; color: #000;}
+
+.gallery {background: #fff; padding: 30px 0;}
+.gallery h2 {font-size: 3em; color: #58c55b; font-weight: 300;}
+.gallery h3 {font-size: 2em; color: #58c55b; font-weight: 300;}
+
+.products {margin: 70px 0;}
+.product .name {font-size: 1.7em; font-weight: 300;}
+.product .price {font-size: 2.2em; color: #58c55b; font-weight: 300;}
+.shop-button {font-size: 1.2em; background: #58c55b; border: 1px solid #58c55b; color: #fff; width: 150px; 
+	margin: 70px 0;}
+.shop-button:hover {background: #fff; color: #58c55b; border: 1px solid #58c55b;}
+
+
+footer {background: #222; padding: 50px 0; background: url("http://savannah.ee/images/taust.jpg"); background-repeat: repeat;}
+footer img {width: 280px; margin: 0 auto; display: block; margin-top: 50px;}
+footer p {color: #fff;}
+footer .links p {text-align: right;}
+footer a, footer .news a {color: #58c55b;}
+footer .links a:hover {color: #58c55b;}
+footer .header {font-size: 2em; color: #fff; font-weight: 300;}
+footer .news .title {font-size: 1.2em; font-weight: 300;}
+footer .news .title:hover {text-decoration: underline;}
+footer .links a {color: #fff; font-size: 1.1em;}
+footer .date {font-size: 0.9em;}
+
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-brand {padding-top: 20px;}
+	.navbar-default .navbar-brand img {height: 50px;}
+	.navbar-default .navbar-collapse {border: none;}
+	.navbar-default .navbar-nav li {height: 50px; text-align: center;}
+	.navbar-default .navbar-nav li a {height: 50px; padding: 15px 15px 0; font-size: 1em; letter-spacing: 1px;}
+
+/* -------------- Home page full-width styles ----------------*/
+	.full-width {max-height: 500px; min-height: 400px}
+	.full-width img {width: auto; height: 100%; min-width: 100%; left: -9999px; right: -9999px; margin: auto;}
+	.full-width h1 {width: 90%; position: absolute; left: 5%; margin-top: 200px; font-size: 2.3em}
+
+	.service {width: 280px; margin: 0 auto 20px;}
+	.service p {font-size: 2em;}
+
+	.products {margin: 20px 0;}
+	.product img {width: 280px; margin: 0 auto; display: block;}
+	.shop-button {margin: 20px 0;}
+
+	footer p, footer .links p {text-align: center;}
+	footer img {margin: 30px auto; width: 250px;}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-default .navbar-nav li a {padding: 35px 10px 0; font-size: 1.1em; letter-spacing: 1px;}
+	.navbar-default .navbar-nav li .glyphicon {display: none;}
+
+/* -------------- Home page full-width styles ----------------*/	
+	.full-width {max-height: 530px;}
+	.full-width h1 {font-size: 3em; width: 500px; margin-top: 25%;}
+	.service p {font-size: 1.8em;}
+
+	.product .price {font-size: 2.2em; color: #58c55b; font-weight: 300;}
+	.shop-button {margin: 40px 0;}
+ }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+/* -------------- Home page full-width styles ----------------*/
+	.full-width {max-height: 670px;}
+	.service p {font-size: 2em;}
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+/* -------------- Home page full-width styles ----------------*/
+	.full-width {max-height: 830px;}
+	.service-wrap {padding: 30px;}
+	.service {margin-bottom: 0;}
+}
+
+@media (min-width: 1600px) {
+/* -------------- Home page full-width styles ----------------*/
+	.full-width {max-height: 1000px;}
+	.service-wrap {padding: 30px;}
+	.service {margin-bottom: 0;}
+
+}
