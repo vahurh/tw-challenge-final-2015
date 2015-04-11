@@ -39,8 +39,7 @@
 	                <li><g:link controller = "login" action = "index">LOGI SISSE</g:link></li>
 	            </sec:ifNotLoggedIn>
 	            <sec:ifLoggedIn>
-	            	<li><g:link controller = "cause" action = "list">MINU MAKSED</g:link></li>
-	         	   	<li><g:link controller = "schoolClass" action = "create">LISA KLASS</g:link></li>
+	         	   <li><g:link controller = "schoolClass" action = "create">LISA KLASS</g:link></li>
 	            	<li><g:link controller = "cause" action = "create">LOO MAKSE</g:link></li>
 	                <li><g:link controller = "logout" action = "index">LOGI VÄLJA</g:link></li>
 	            </sec:ifLoggedIn>
@@ -67,5 +66,5 @@ $(document).ready(function() {
 });
 
 </g:javascript>
-	</body>
+</body>
 </html>

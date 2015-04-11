@@ -1,7 +1,8 @@
-body {font-family: 'Open Sans', sans-serif; background: #f0f0f0; height: 3000px;}
+    body {font-family: 'Open Sans', sans-serif; background: #f0f0f0; height: 1000px; }
 a {color: #000; outline: 0;}
 a:hover, a:focus, a:active {text-decoration: none; color: #000; outline: 0;}
 h1, h2, h3, h4 {color: #525252;}
+
 
 /* -------------- Form styles ----------------*/
 form input, form textarea, form select {min-height: 30px; padding: 5px 10px; width: 100%; border: 1px solid #ccc; 
@@ -12,16 +13,31 @@ form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 	background: #58c55b; color: #fff; border: 1px solid #58c55b;}
 .form-button:hover, .form-button:active, .form-button:focus {background: #fff; color: #58c55b; border-color: #58c55b;}
 
+/*.navbar {*/
+    /*opacity:0;  *//* make things invisible upon start */
+    /*-webkit-animation:fadeIn ease-in 1;  *//* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    /*-moz-animation:fadeIn ease-in 1;*/
+    /*animation:fadeIn ease-in 1;*/
+
+    /*-webkit-animation-fill-mode:forwards;  *//* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    /*-moz-animation-fill-mode:forwards;*/
+    /*animation-fill-mode:forwards;*/
+
+    /*-webkit-animation-duration:1s;*/
+    /*-moz-animation-duration:1s;*/
+    /*animation-duration:1s;*/
+/*}*/
+
 /* -------------- Navbar styles ----------------*/
 .navbar {background: white; min-height: 90px; margin-bottom: 0; border-bottom: none; box-shadow: 0px 0px 15px #eee;}
-.navbar-default .navbar-brand {color: #58c55b; padding-top: 0; height: 90px; 
+.navbar-default .navbar-brand {color: #58c55b; padding-top: 0; height: 90px;
 	padding-top: 5px; font-weight: 600; font-size: 1.8em; letter-spacing: 2px;}
 .navbar-default .navbar-brand {padding-top: 20px;}
 .navbar-default .navbar-brand img {height: 50px;}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color: #58c55b;}
 .navbar-default .navbar-nav li {height: 90px;}
 .navbar-default .navbar-nav li a {color: #58c55b; height: 90px; padding: 35px 15px 0; font-size: 1.1em; font-weight: 400; letter-spacing: 0.3px;}
-.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {color: #58c55b; border-bottom: 4px solid #58c55b;} 
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {color: #58c55b; border-bottom: 4px solid #58c55b;}
 .navbar-default .navbar-nav li .glyphicon {margin-right: 10px;}
 .navbar-default .navbar-toggle {border: none; margin-top: 30px;}
 .navbar-default .navbar-toggle .icon-bar {background: #58c55b;}
@@ -29,7 +45,8 @@ form label {margin-top: 5px; font-size: 1.1em; font-weight: 400;}
 .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {background: #58c55b;}
 
 /* -------------- Home page full-width styles ----------------*/
-.full-width {position: relative; overflow: hidden; z-index: -5; min-height: 450px;}
+
+.full-width {position: relative; overflow: hidden; z-index: -5; min-height: 450px; }
 .full-width img {position: absolute; top: 0; z-index: -5; width: 100%; min-height: 100%;}
 .full-width h1 {width: 730px; color: #58c55b; font-size: 5em; background: rgba(0, 0, 0, 0.8);
 	padding: 20px 0; margin: 20% auto 0; font-weight: 300;}
